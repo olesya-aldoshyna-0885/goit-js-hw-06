@@ -13,18 +13,12 @@
 // Category: Technologies
 // Elements: 5
 
-document.querySelectorAll(#categories);
+const allCategories = document.querySelectorAll(".item");
+console.log(`Number of categories:`, allCategories.length);
 
-// ul.classList.add(elementCategories);
+const allTitlesEl = document.querySelectorAll("h2");
 
-// document.querySelectorAll();
-// const array = [];
-// array.push();
-
-
-
-// calculatorCategorirs(Category) {
-// const liElement = 
-// };
-
-// document.querySelectorAll()
+allTitlesEl.forEach((title) => {
+    console.log(`Category: `, title.textContent);
+    console.log(`Elements: `, title.nextElementSibling.children.length);
+});
