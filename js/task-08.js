@@ -29,7 +29,7 @@ form.addEventListener(`submit`, function handleSubmit(evt) {
         alert(`Please fill in all the field!`);
     } else {
         console.log({Email: form.elements.email.value, Password: form.elements.password.value})
-    }
         evt.currentTarget.reset();
+    }
 });
     

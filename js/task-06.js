@@ -26,11 +26,9 @@
 
 const text = document.querySelector(`#validation-input`);
 text.addEventListener(`blur`, function onChange(evt) {
-    
+    text.classList.add(`invalid`);
     if (evt.currentTarget.value.length === Number(text.dataset.length)) {
-        text.classList.add(`valid`);
-    } else {
-        text.classList.replace(`valid`, `invalid`);
+        text.classList.replace(`invalid`, `valid`);
     }
 }
 );
